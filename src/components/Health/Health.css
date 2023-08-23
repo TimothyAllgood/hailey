@@ -1,0 +1,27 @@
+.quote {
+  position: relative;
+  display: flex;
+}
+
+.quote p {
+  margin-left: 10px;
+}
+
+.quote .flourish {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: var(--accent);
+}
+
+.health-img {
+  width: 70vw;
+  margin: 15px 0;
+}
+
+.caption,
+.quote-caption {
+  font-size: 0.7em;
+}

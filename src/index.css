@@ -1,0 +1,111 @@
+:root {
+  --dark: #262626;
+  --light: #fff8f8;
+  --light-bg: #f3ebe7;
+  --main: #b9a990;
+  --main-dark: #8b684c;
+  --main-light: #b59383;
+  --accent: #96a88e;
+  --accent-dark: #889962;
+  --link-color: var(--dark);
+  --link-active: var(--main);
+  --link-hover: orange;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  line-height: 1.6;
+  background-color: var(--light-bg);
+  color: var(--dark);
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+a.active {
+  color: var(--link-active);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.bulleted {
+  list-style-type: disc;
+}
+
+.bulleted li {
+  margin-bottom: 10px;
+  margin-left: 25px;
+}
+
+section {
+  width: 100vw;
+}
+
+.page-container {
+  width: 75vw;
+  margin: 0 auto;
+}
+
+.page-container h2 {
+  margin: 25px 0;
+}
+
+.page-container h5 {
+  margin: 25px 0;
+}
+
+.links a {
+  color: var(--accent);
+  transition: all ease-in-out 0.3s;
+}
+
+.links a:hover {
+  color: var(--main);
+}
+
+.page-container .divider {
+  display: block;
+  width: 75vw;
+  margin: 0 auto;
+  border-top: 2px solid rgb(194, 194, 194);
+  border-right: 2px solid transparent;
+  border-left: 2px solid transparent;
+  margin-bottom: calc(5vh - 2px);
+}
+
+.blog-container {
+  width: 75vw;
+  margin: 0 auto;
+}
+
+.container-with-sidebar {
+  width: 75vw;
+  margin: 0 auto;
+  display: flex;
+}
+
+.container-with-sidebar .content {
+  width: 60%;
+}
+
+.container-with-sidebar .sidebar {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}

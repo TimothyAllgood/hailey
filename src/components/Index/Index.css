@@ -1,0 +1,76 @@
+.splash {
+  width: 100vw;
+  height: calc(100vh - 75px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-splash {
+  position: relative;
+  width: 75vw;
+  margin: 0 auto;
+}
+
+.splash-text {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.splash-text h3 {
+  font-weight: normal;
+  font-size: 1.6rem;
+}
+
+.splash-img {
+  width: 60%;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.splash-img img {
+  width: 100%;
+  height: auto;
+}
+
+.book-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.book-btn {
+  transition: all ease 0.3s;
+}
+
+.book-btn:hover {
+  cursor: pointer;
+  color: var(--main-dark);
+}
+
+.book-arrow {
+  transition: all ease 0.3s;
+}
+
+.underline {
+  width: 0;
+  height: 2px;
+  background-color: var(--main);
+  opacity: 0;
+  transition: all ease 0.3s;
+}
+
+.book-btn:hover .underline {
+  width: 200px;
+  opacity: 1;
+}
+
+.book-btn:hover .book-arrow {
+  padding-left: 10px;
+}

@@ -1,0 +1,37 @@
+.post-excerpt {
+  width: 90%;
+  height: 300px;
+  display: flex;
+  gap: 25px;
+}
+
+.post-excerpt .thumbnail {
+  /* flex-basis: 50%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-excerpt .thumbnail img {
+  border-radius: 50%;
+  height: 70%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+}
+
+.post-excerpt .excerpt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  /* align-items: center; */
+}
+
+.post-link {
+  transition: all ease 0.3s;
+}
+
+.post-link:hover {
+  color: var(--main-dark);
+}
